@@ -23,9 +23,7 @@ const versions = {
 
   // Add future entries here:
   // v5: { label: 'V5 Executive panel', component: V5ExecutivePanel },
-}  // Example future entries:
-  // v4: { label: 'V4 Executive panel', component: V4ExecutivePanel },
-  // v5: { label: 'V5 Print tuned', component: V5PrintTuned },
+  // v6: { label: 'V6 Print tuned', component: V6PrintTuned },
 };
 
 function VersionSelect({ value, onChange, label }) {
@@ -55,7 +53,9 @@ export default function App() {
   const [primaryKey, setPrimaryKey] = useState(safeFinalKey);
   const [compareMode, setCompareMode] = useState(false);
   const [compareKey, setCompareKey] = useState(
-    versionKeys.length > 1 ? versionKeys.find((key) => key !== safeFinalKey) || safeFinalKey : safeFinalKey
+    versionKeys.length > 1
+      ? versionKeys.find((key) => key !== safeFinalKey) || safeFinalKey
+      : safeFinalKey
   );
 
   const PrimaryComponent = useMemo(() => {
@@ -68,7 +68,6 @@ export default function App() {
 
   const FinalComponent = versions[safeFinalKey].component;
 
-  // OPTION A: render only the chosen winner
   if (!USE_SWITCHER) {
     return <FinalComponent />;
   }
