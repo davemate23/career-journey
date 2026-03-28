@@ -8,7 +8,7 @@ import V5StreamConvergencev2 from './versions/V5_StreamConvergencev2';
   - true  = show the version selector / compare UI
   - false = render only the final chosen version (Option A)
 */
-const USE_SWITCHER = true;
+const USE_SWITCHER = false;
 
 /*
   OPTION A FINALISATION
