@@ -2,18 +2,19 @@ import React, { useMemo, useState } from 'react';
 import V3Interactive from './versions/V3_Interactive';
 import V4StreamConvergence from './versions/V4_StreamConvergence';
 import V5StreamConvergencev2 from './versions/V5_StreamConvergencev2';
+import V6StreamConvergencev3 from './versions/V6_StreamConvergencev3';
 
 /*
   SWITCHER MODE
   - true  = show the version selector / compare UI
   - false = render only the final chosen version (Option A)
 */
-const USE_SWITCHER = false;
+const USE_SWITCHER = true;
 
 /*
   OPTION A FINALISATION
 */
-const FINAL_VERSION_KEY = 'v5';
+const FINAL_VERSION_KEY = 'v6';
 
 /*
   VERSION REGISTRY
@@ -22,6 +23,7 @@ const versions = {
   v3: { label: 'V3 Interactive', component: V3Interactive },
   v4: { label: 'V4 Stream convergence', component: V4StreamConvergence },
   v5: { label: 'V5 Stream Convergence v2', component: V5StreamConvergencev2 },
+  v6: { label: 'V6 Stream Convergence v3', component: V6StreamConvergencev3 },
 
   // Add future entries here:
   // v5: { label: 'V5 Executive panel', component: V5ExecutivePanel },
