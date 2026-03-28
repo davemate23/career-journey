@@ -2,11 +2,6 @@ import React, { useMemo, useState } from 'react';
 import V3Interactive from './versions/V3_Interactive';
 import V4StreamConvergence from './versions/V4_StreamConvergence';
 
-// ADD NEW VERSIONS HERE AS YOU CREATE THEM.
-// Example:
-// import V4ExecutivePanel from './versions/V4_ExecutivePanel';
-// import V5PrintTuned from './versions/V5_PrintTuned';
-
 /*
   SWITCHER MODE
   - true  = show the version selector / compare UI
@@ -16,35 +11,19 @@ const USE_SWITCHER = true;
 
 /*
   OPTION A FINALISATION
-  When you have chosen the winner:
-  1) leave the winning version imported above
-  2) set FINAL_VERSION_KEY to that version's key below
-  3) set USE_SWITCHER = false
-
-  Example:
-  const USE_SWITCHER = false;
-  const FINAL_VERSION_KEY = 'v4';
 */
 const FINAL_VERSION_KEY = 'v3';
 
 /*
   VERSION REGISTRY
-  - key: short internal id
-  - label: what appears in the dropdown
-  - component: imported React component
-
-  TO ADD A NEW ITERATION:
-  1) create a new file in src/versions/, e.g. V4_ExecutivePanel.jsx
-  2) import it at the top of this file
-  3) add a new entry below:
-     v4: { label: 'V4 Executive panel', component: V4ExecutivePanel }
 */
 const versions = {
   v3: { label: 'V3 Interactive', component: V3Interactive },
   v4: { label: 'V4 Stream convergence', component: V4StreamConvergence },
-};
 
-  // Example future entries:
+  // Add future entries here:
+  // v5: { label: 'V5 Executive panel', component: V5ExecutivePanel },
+}  // Example future entries:
   // v4: { label: 'V4 Executive panel', component: V4ExecutivePanel },
   // v5: { label: 'V5 Print tuned', component: V5PrintTuned },
 };
