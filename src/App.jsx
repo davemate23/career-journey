@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import V3Interactive from './versions/V3_Interactive';
 import V4StreamConvergence from './versions/V4_StreamConvergence';
+import V5StreamConvergencev2 from './versions/V5_StreamConvergencev2';
 
 /*
   SWITCHER MODE
@@ -20,6 +21,7 @@ const FINAL_VERSION_KEY = 'v3';
 const versions = {
   v3: { label: 'V3 Interactive', component: V3Interactive },
   v4: { label: 'V4 Stream convergence', component: V4StreamConvergence },
+  v5: { label: 'V5 Stream Convergence v2', component: V5StreamConvergencev2 },
 
   // Add future entries here:
   // v5: { label: 'V5 Executive panel', component: V5ExecutivePanel },
