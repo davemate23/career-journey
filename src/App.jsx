@@ -13,7 +13,7 @@ const USE_SWITCHER = true;
 /*
   OPTION A FINALISATION
 */
-const FINAL_VERSION_KEY = 'v3';
+const FINAL_VERSION_KEY = 'v5';
 
 /*
   VERSION REGISTRY
