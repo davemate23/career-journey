@@ -1,5 +1,11 @@
 import React, { useMemo, useState } from 'react';
 import V3Interactive from './versions/V3_Interactive';
+import V4StreamConvergence from './versions/V4_StreamConvergence';
+
+const versions = {
+  v3: { label: 'V3 Interactive', component: V3Interactive },
+  v4: { label: 'V4 Stream convergence', component: V4StreamConvergence },
+};
 
 // ADD NEW VERSIONS HERE AS YOU CREATE THEM.
 // Example:
