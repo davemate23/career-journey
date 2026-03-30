@@ -227,10 +227,10 @@ const milestones = [
     org: 'GSK',
     sector: 'Biopharma',
     title: 'Director, Risk Management — R&D',
-    shift: 'The current synthesis point: leading risk strategy across AI/ML, epidemiology, and Development Science in a global R&D environment — helping shape how complex scientific and technical decisions are governed, anticipated, and made under uncertainty.',
+    shift: 'The current synthesis point: leading risk strategy across AI/ML and Development Sciences (including Epidemiology) in a global R&D environment — helping shape how complex scientific and technical decisions are governed, anticipated, and made under uncertainty.',
     proofs: [
-      'Risk leadership across AI/ML, Development Science, and Epidemiology functions',
-      'Embedding anticipatory and intelligence-led risk frameworks in Development Science',
+      'Risk leadership across AIML, Development Science, and Epidemiology functions',
+      'Embedding anticipatory and intelligence-led risk frameworks across R&D',
     ],
     primaryStream: 'frontier',
     activeStreams: ['intelligence', 'systems', 'frontier', 'command'],
