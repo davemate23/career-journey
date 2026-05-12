@@ -6,6 +6,7 @@ import V6StreamConvergencev3 from './versions/V6_StreamConvergencev3';
 import V7StreamConvergencev4 from './versions/V7_StreamConvergencev4';
 import V8StreamConvergencev5 from './versions/V8_StreamConvergencev5';
 import V9StreamConvergencev6 from './versions/V9_StreamConvergencev6';
+import V10StreamConvergencev7 from './versions/V10_StreamConvergencev7';
 
 /*
   SWITCHER MODE
@@ -17,7 +18,7 @@ const USE_SWITCHER = false;
 /*
   OPTION A FINALISATION
 */
-const FINAL_VERSION_KEY = 'v9';
+const FINAL_VERSION_KEY = 'v10';
 
 /*
   VERSION REGISTRY
@@ -30,6 +31,8 @@ const versions = {
   v7: { label: 'V7 Stream Convergence v4', component: V7StreamConvergencev4 },
   v8: { label: 'V8 Stream Convergence v5', component: V8StreamConvergencev5 },
   v9: { label: 'V9 Stream Convergence v6', component: V9StreamConvergencev6 },
+  v10: { label: 'V10 Stream Convergence v7', component: V10StreamConvergencev7 },
+
 
   // Add future entries here:
   // v5: { label: 'V5 Executive panel', component: V5ExecutivePanel },
